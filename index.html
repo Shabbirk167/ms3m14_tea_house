@@ -30,7 +30,8 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        "gradient-start": '#FF8938',
+                        "gradient-end": '#F00',
                     }
                 }
             }
@@ -137,7 +138,7 @@
         </section>
         <!-- ! super cline -->
         <section
-            class="my-24 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24 gap-12 flex flex-col lg:flex-row">
+            class="my-24 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-24 gap-12 flex flex-col lg:flex-row">
             <!-- ! text -->
             <div class="flex items-center lg:pr-28">
                 <div class="sapce-y-5">
@@ -194,7 +195,7 @@
     </main>
     <!-- ! footer section -->
     <footer class=" container mx-auto px-48 py-10 bg-base-200 text-base-content">
-        <div class="flex justify-between py-24">
+        <div class="flex justify-between my-24">
             <img src="images/cup.png" alt="">
             <p>
                 <span>Ready to get started?</span>
@@ -229,8 +230,10 @@
                         <span class="label-text">Enter your email address</span>
                     </label>
                     <div class="join">
-                        <input type="text" placeholder="username@site.com" class="input bg-transparent border-b-2 border-black outline" />
-                        <button class="btn btn-primary join-item">Subscribe</button>
+                        <input type="text" placeholder="username@site.com" class="py-4 bg-transparent border-b-2 border-black outline-none" />
+                        <button class="btn text-white rounded-full bg-gradient-to-r from-gradient-start to-gradient-end">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
                     </div>
                 </fieldset>
             </form>
